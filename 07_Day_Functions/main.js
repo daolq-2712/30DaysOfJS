@@ -25,3 +25,24 @@ function sumAllNums() {
 }
 
 console.log(sumAllNums(15, 20, 30, 25, 10, 33, 40))
+
+// anonymous function or without name
+const anonymousFun = function() {
+    console.log('I am an anonymous function and my value is stored in anonymousFun')
+}
+
+anonymousFun()
+
+// Function expression
+const square = function(n) {
+    return n * n
+}
+  
+console.log(square(2))
+
+// Self invoking Functions
+let squaredNum = (function(n) {
+  return n * n
+})(10)
+  
+console.log(squaredNum)
