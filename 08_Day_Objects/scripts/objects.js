@@ -51,3 +51,17 @@ const personFull = {
 
   console.log(personFull)
   console.log(personFull.getPersonInfo())
+
+  // Object methods:assign, keys, values, entries
+  // HasOwnProperty
+  const copyPerson = Object.assign({}, personFull)
+  console.log(copyPerson)
+
+  console.log(Object.keys(copyPerson))
+
+  console.log(Object.values(copyPerson))
+
+  console.log(Object.entries(copyPerson))
+
+  console.log(copyPerson.hasOwnProperty('name'))
+  console.log(copyPerson.hasOwnProperty('age'))
