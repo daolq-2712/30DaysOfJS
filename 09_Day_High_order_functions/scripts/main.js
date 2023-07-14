@@ -32,3 +32,14 @@ const sumArray = arr => {
 }
 
 console.log(sumArray(numbers))
+
+// Schedule
+function sayHello() {
+    console.log('Hello')
+  }
+
+// setInterval(sayHello, 1000) // it prints hello in every second, 1000ms is 1s
+setTimeout(sayHello,2000)
+
+// Functional programming
+// forEach, map, filter, reduce, every, find, findIndex, some, sort
