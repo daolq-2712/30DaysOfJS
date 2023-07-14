@@ -46,3 +46,14 @@ let squaredNum = (function(n) {
 })(10)
   
 console.log(squaredNum)
+
+// Arrow function
+const printFullName = (firstName, lastName) => {
+  return `${firstName} ${lastName}`
+}
+
+console.log(printFullName('Dao', 'LQ'))
+
+// if we have only one line in the code block, it can be written as follows, explicit return
+const squareArrowFunction = n => n * n
+console.log(square(3))
