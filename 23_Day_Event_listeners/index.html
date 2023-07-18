@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <button onclick="clickMe()">Click Me</button>
+    <button id="dblClick">Double Click</button>
+    <button id="mouseenter">Mouse Enter</button>
+    <script>
+        const clickMe = () => {
+            alert("We can attach event on HTML element")
+        }
+    </script>
+
+    <script>
+        const button = document.querySelector('#dblClick')
+        button.addEventListener('dblclick', e => {
+        console.log('e gives the event listener object:', e)
+        console.log('e.target gives the selected element: ', e.target)
+        console.log(
+          'e.target.textContent gives content of selected element: ',
+          e.target.textContent)
+        })
+
+        const button_mouseenter = document.querySelector('#mouseenter')
+        button_mouseenter.addEventListener('mouseenter', e => {
+        console.log('e gives the event listener object:', e)
+        console.log('e.target gives the selected element: ', e.target)
+        console.log(
+          'e.target.textContent gives content of selected element: ',
+          e.target.textContent
+        )
+      })
+    </script>
+  </body>
+</html>
